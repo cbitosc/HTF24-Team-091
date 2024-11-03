@@ -1,0 +1,103 @@
+.cuisines {
+    background-color: var(--background-light);
+    color: var(--text-color);
+    max-width: 100%;
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        color: var(--text-color);
+        font-size: 1.75rem;
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: var(--text-light);
+    }
+
+    .cuisine-category {
+        margin-bottom: 1.5em;
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            padding-bottom: 8px;
+        }
+
+        .cuisine-description {
+            font-size: 0.9rem;
+            color: var(--text-light); 
+            text-align: justify; 
+            margin-bottom: 0.8em;
+        }
+
+        .recipe-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .recipe-card {
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px var(--shadow-color);
+            margin-bottom: 1.5em;
+            margin-top: 0.5em;
+            animation: popIn 0.5s ease forwards;
+            display: flex;
+            flex-direction: column;
+        
+            .recipe-card-info {
+                padding: 15px;
+                flex: 1;
+        
+                .recipe-cuisine {
+                    color: var(--text-light);
+                    font-size: 0.9em;
+                    margin: 0.5em 0;
+                }
+            }
+        
+            .custom-image {
+                z-index: -1;
+                width: 100%;
+                height: auto;
+                flex-shrink: 0;
+            }
+        
+            .recipe-title {
+                font-size: 1.25em;
+                font-weight: bold;
+                margin: 0.5em 0;
+                color: var(--text-color);
+            }
+        
+            .recipe-desc {
+                color: var(--text-light);
+                font-size: 0.9em;
+                letter-spacing: 1px;
+                flex-grow: 1;
+            }
+        
+            .view-btn {
+                font-size: 1em;
+                font-weight: bold;
+                color: var(--primary-color);
+                margin-top: 0.5em;
+                display: inline-block;
+                text-decoration: none;
+        
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+}
